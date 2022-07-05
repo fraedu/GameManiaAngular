@@ -1,0 +1,258 @@
+
+
+
+.banner {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner_f1 {
+    background-image: url(/assets/img/bannerult1.svg);
+}
+
+.banner_cs {
+    background-image: url(/assets/img/banner_cs.png);
+}
+
+.banner_lol {
+    background-image: url(/assets/img/banner_lol.png);
+}
+
+.posicionamento_banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo_banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.conteudo_banner, h1, p {
+    color: white;
+    font-weight: bold;
+}
+
+.conteudo_banner h1 {
+    font-size: 40px;
+}
+
+.conteudo_banner p {
+    font-size: 20px;
+}
+
+.conteudo_banner a {
+    text-transform: uppercase;
+    background-color: black;
+    padding: 10px;
+    border-radius: 7px;
+    
+} 
+
+.conteudo_banner a:hover {
+    background-color: rgb(14, 8, 100);
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.secao_navegacao {
+    height: 170px;
+    background-color: rgb(107, 107, 107);
+}
+
+.posicionamento_navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.posicionamento_navegacao img {
+    height: 70px;
+    width: 70px;
+}
+
+.item_navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.item_navegacao a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.lancamentos {
+    height: 560px;
+    background-color: rgb(107, 107, 107);
+}
+
+.cabecalho_jogos {
+    height: 80px;
+    background-color: black;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho_jogos h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.card_jogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 240px;
+    height: 430px;
+}
+
+.imagem_card {
+    background-image: url(/assets/img/capajogosdead.svg);
+    width: 260px;
+    height: 400px;
+    box-shadow: 1px 1px 20px 4px #000000;
+    border-radius: 8px;
+}
+
+.nome_jogo {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px; 
+}
+
+.nome_jogo a:hover {
+    padding: 8px;
+}
+
+.top_mais_jogados {
+    height: 560px;
+    background-color: rgb(107, 107, 107);
+}
+
+.acessorios {
+    height: 300px;
+    background-color: rgb(107, 107, 107);
+}
+
+.position_acessorios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+}
+
+
+@media screen and (max-width: 1200px){
+    .imagem_card {
+        height: 300px;
+        width: 200px;
+    }
+    .lancamentos {
+        height: 500px;
+    }
+    .top_mais_jogados {
+        height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+    .imagem_card {
+        background-image: url(/assets/img/capajogosp.svg);
+        height: 240px;
+        width: 150px;
+    }
+    .lancamentos {
+        height: 450px;
+    }
+    .top_mais_jogados {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .card_end {
+        display: none;
+    }
+    .position_acessorios img {
+        height: 90px;
+        width: 90px;
+    }
+    
+
+}
+
+@media screen  and (max-width: 575px){
+    .imagem_card {
+        height: 200px;
+        width: 130px;
+    } 
+    
+    .position_acessorios img {
+        height: 85px;
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 439px){
+    .card_3 {
+        display: none;
+    }
+    .imagem_card {
+        height: 220px;
+        width: 150px;
+    } 
+}
+
+@media screen and (max-width: 404px){
+    .posicionamento_navegacao img {
+        height: 55px;
+        width: 55px;
+    }
+    
+}
+
+@media screen and (max-width: 359px){
+    .position_acessorios img {
+        height: 60px;
+        width: 60px;
+    }
+    .imagem_card {
+        height: 190px;
+        width: 130px;
+    }
+    .top_mais_jogados {
+        height: 400px;
+    }
+    .lancamentos {
+        height: 400px;
+    }
+    .posicionamento_navegacao a {
+        font-size: 12px;
+    }
+    .banner {
+        height: 450px;
+    }
+    
+}
